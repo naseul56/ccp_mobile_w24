@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
     background: #f8e6ec;
-    color: #00695c;
+    color: #00504c;
     word-wrap: break-word;
 }
 
@@ -11,7 +11,7 @@ a[href = "#main"] {
     position: absolute;
     left: -999px;
     top: 0;
-    background: #f48fb1;
+    background: #c24770;
     color: white;
     padding: 8px;
     z-index: 100;
@@ -61,7 +61,7 @@ nav ul li a {
     display: block;
     padding: 12px 20px;
     text-decoration: none;
-    color: #004d40;
+    color: #003830;
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap;
     overflow: hidden;
@@ -70,7 +70,7 @@ nav ul li a {
 
 nav ul li a.active, nav ul li a:hover {
     background-color: #fce4ec;
-    color: #880e4f;
+    color: #7a1f3d;
 }
 
 @media (min-width: 600px) {
@@ -131,7 +131,7 @@ main {
 .recipe-section h1, h2, h3,
 .travel-section h1, h2, h3 {
     grid-column: 1 / -1;
-    color: #004d40;
+    color: #00504c;
 }
 
 .pet-section img, .pet-section video,
