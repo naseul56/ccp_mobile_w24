@@ -4,6 +4,7 @@ body {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
     background: #f8e6ec;
     color: #00695c;
+    word-wrap: break-word;
 }
 
 a[href = "#main"] {
@@ -47,6 +48,9 @@ nav ul li a {
     text-decoration: none;
     color: #004d40;
     transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -87,16 +91,24 @@ main {
 }
 
 .recipe-section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
 }
 
 .travel-section {
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
 }
 
 @media (min-width: 600px) {
     .pet-section, .recipe-section, .travel-section {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .recipe-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .travel-section {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
     }
 }
 
@@ -157,4 +169,11 @@ main {
 
 .travel-section h3 {
     grid-column: 1 / -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-element {
+      animation: none;
+      transition: none;
+    }
 }
